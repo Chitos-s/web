@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    color: #0c0b10;
+    text-align: center;
+}
+
+.background_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('gaiti.jfif') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+section{
+    
+    position: absolute;
+    background-color: #f0f8ff;
+    width: 900px;
+    height:800px;
+    border-radius: 10%;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 60px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #d7eef3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+a {
+    background-color: #529fd2;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    max-width: 200px;
+    position: relative;
+    
+}
+
+a:hover {
+    background-color: #2655a2;
+}

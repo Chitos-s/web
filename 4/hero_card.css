@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    overflow: hidden;
+}
+
+.hero_header {
+    background-color: #c62626;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero_image {
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(38, 0, 30, 0.667);
+}
+
+.hero_info {
+    margin-top: 10px;
+}
+
+.hero_name {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+.hero_title {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.hero_details {
+    padding: 20px;
+}
+
+.hero_details h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.contact_info, .abilities {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.contact_info :hover{
+    color: #9a0000;
+    cursor: pointer;
+}
+
+.contact_info li, .abilities li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contact_info li:last-child, .abilities li:last-child {
+    border-bottom: none;
+}
+
+.contact_info i {
+    margin-right: 10px;
+    color: #b31e1e;
+}
+
+.hero_footer {
+    background-color: #faecec;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #861414;
+}

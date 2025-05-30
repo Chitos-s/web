@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра "Угадай цвет"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Игра "Угадай цвет"</h1>
+    <p>Выберите правильный HEX-код для каждого цветного квадрата.</p>
+
+    <div class="color-block">
+        <div class="color-square" style="background-color: #FF5733;"></div>
+        <div class="hex-options">
+            <a href="#correct" class="hex-option">#FF5733</a>
+            <a href="#incorrect" class="hex-option">#33FF57</a>
+            <a href="#incorrect" class="hex-option">#3357FF</a>
+        </div>
+    </div>
+
+    <div class="color-block">
+        <div class="color-square" style="background-color: #33FF57;"></div>
+        <div class="hex-options">
+            <a href="#incorrect" class="hex-option">#FF3357</a>
+            <a href="#correct" class="hex-option">#33FF57</a>
+            <a href="#incorrect" class="hex-option">#5733FF</a>
+        </div>
+    </div>
+
+    <div class="color-block">
+        <div class="color-square" style="background-color: #3357FF;"></div>
+        <div class="hex-options">
+            <a href="#incorrect" class="hex-option">#57FF33</a>
+            <a href="#incorrect" class="hex-option">#FF3357</a>
+            <a href="#correct" class="hex-option">#3357FF</a>
+        </div>
+    </div>
+
+    <div id="correct" class="result correct">
+        Поздравляем! Вы выбрали правильный HEX-код.
+    </div>
+    <div id="incorrect" class="result incorrect">
+        Ошибка! Попробуйте снова.
+    </div>
+
+    <script>
+        // Простой скрипт для отображения сообщений о результате
+        document.querySelectorAll('.hex-option').forEach(option => {
+            option.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelectorAll('.result').forEach(result => {
+                    result.style.display = 'none';
+                });
+                document.querySelector(targetId).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

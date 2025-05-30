@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О себе</a></li>
+            <li><a href="skills.html">Навыки</a></li>
+            <li><a href="achievements.html">Достижения</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Свяжитесь со мной</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Супермен. Все права защищены.</p>
+    </footer>
+</body>
+</html>

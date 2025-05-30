@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ФОРМА</h1>
+        
+        <div class="columns"> 
+
+            <div class="left_column">
+                <div class="form_group">
+                    <input type="text" placeholder="ФИО">
+                </div>
+
+                <div class="form_group">
+                    <label>Пол</label>
+                    <div id="radio_group">
+                        <input type="radio" name="gender"> Жен.
+                        <input type="radio" name="gender"> Муж.
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <input type="password" placeholder="Пароль">
+                </div>
+
+                <div class="form_group">                   
+                    <select>
+                        <option value="" disabled selected>Страна</option>
+                        <option>Россия</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="right_column">
+               
+                <div class="form_group">
+                    <label>Выберите:</label>
+                    <div class="checkbox_group">
+                        <label>
+                            <input type="checkbox"> Мороженное
+                        </label>
+                        <label>
+                            <input type="checkbox" checked> Мясо
+                        </label>
+                        <label>
+                            <input type="checkbox"> Салат
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <input id="text" placeholder="Что вы любите, напишите..." class="with-placeholder"></input>
+                </div>
+
+                <button type="submit">Отправить</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

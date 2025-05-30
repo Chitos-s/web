@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.doors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.door-input {
+    display: none;
+}
+
+.door {
+    width: 80px;
+    height: 150px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.door-front, .door-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    transition: transform 1s;
+}
+
+.door-front {
+    transform: rotateY(0deg);
+}
+
+.door-back {
+    transform: rotateY(180deg);
+}
+
+.door-input:checked + .door .door-front {
+    transform: rotateY(180deg);
+}
+
+.door-input:checked + .door .door-back {
+    transform: rotateY(0deg);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
