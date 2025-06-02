@@ -54,8 +54,6 @@ h2 {
     padding-bottom: 15px;
 }
 
-
-/* Стили для выпадающего списка */
 select {
     width: 100%;
     background-color: #ffffff;
@@ -63,9 +61,8 @@ select {
     cursor: pointer;
 }
 
-/* Стили для опций в выпадающем списке */
 select option {
-    background-color: #e8a1fe; /* Розовый фон для опций */
+    background-color: #e8a1fe; 
     padding: 10px;
     font-size: 16px;
     font-weight: 300;
@@ -88,8 +85,8 @@ textarea {
 .radio_group {
     display: flex;
     gap: 20px;
-    margin-left: 0; /* Выравнивание по левому краю */
-    padding-left: 0; /* Убираем отступ слева */
+    margin-left: 0; 
+    padding-left: 0; 
 }
 
 .radio_group label,
@@ -121,8 +118,6 @@ input[type="checkbox"] {
     font-size: 20px;
 }
 
-
-/*кнопка*/
 button {
     background-color: #e8a1fe;
     border: none;

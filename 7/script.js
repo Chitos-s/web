@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPlayer = 'X';
     let gameActive = true;
 
-    // Создаем игровое поле
     function createBoard() {
         gameBoard.innerHTML = '';
         for (let i = 0; i < 3; i++) {
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Обработка клика по клетке
     function handleCellClick(e) {
         const row = e.target.getAttribute('data-row');
         const col = e.target.getAttribute('data-col');
@@ -51,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(computerMove, 500);
     }
 
-    // Ход компьютера
     function computerMove() {
         if (!gameActive) return;
 
@@ -88,23 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
         status.textContent = 'Ваш ход';
     }
 
-    // Проверка на победу
     function checkWin() {
-        // Проверка строк
         for (let i = 0; i < 3; i++) {
             if (board[i][0] !== '' && board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
                 return true;
             }
         }
 
-        // Проверка столбцов
         for (let j = 0; j < 3; j++) {
             if (board[0][j] !== '' && board[0][j] === board[1][j] && board[1][j] === board[2][j]) {
                 return true;
             }
         }
 
-        // Проверка диагоналей
         if (board[0][0] !== '' && board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
             return true;
         }
@@ -116,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     }
 
-    // Проверка на ничью
     function checkDraw() {
         for (let i = 0; i < 3; i++) {
             for (let j = 0; j < 3; j++) {
@@ -128,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    // Перезапуск игры
     restartButton.addEventListener('click', () => {
         board = Array(3).fill().map(() => Array(3).fill(''));
         currentPlayer = 'X';
