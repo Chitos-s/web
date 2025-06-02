@@ -1,14 +1,14 @@
-/* Общие стили для всех страниц */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #333;
+    color: #441313;
+    font-size: 23px;
 }
 
 header {
-    background-color: #0066cc;
+    background-color: #c43232;
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #da8f8f;  
 }
 
 nav ul li {
@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0066cc;
+    color: #5e1818;
     text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #da8f8f;
     color: white;
     text-align: center;
     padding: 10px;
@@ -53,14 +53,52 @@ footer {
     bottom: 0;
 }
 
-/* Анимации */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+main img{
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px rgba(38, 0, 30, 0.384);
+    
 }
 
-main {
-    animation: fadeIn 1s ease-in;
+.skill-item {
+    margin-bottom: 10px;
 }
 
-/* Стили для конкретных страниц будут добавлены ниже */
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: #5e1818;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+    animation: load 2s ease-in-out forwards;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dc9999;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #c43232;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #710d0d;
+}
